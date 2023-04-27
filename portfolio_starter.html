@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <script type="text/javascript" src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+   </head>
+   <body>
+      <p>I am a </p>
+      <p id="app"></p>
+      <!-- typewriter script, do not edit -->
+      <script type="text/javascript">
+         var app = document.getElementById('app');
+         
+         var typewriter = new Typewriter(app, {
+           loop: true
+         });
+         
+         typewriter.typeString('<u>Hello World!</u>')
+           .pauseFor(2500)
+           .deleteAll()
+           .typeString('Strings can be removed')
+           .pauseFor(2500)
+           .deleteChars(7)
+           .typeString('<em>altered!</em>')
+           .pauseFor(2500)
+           .start();
+      </script>
+   </body>
+</html>
